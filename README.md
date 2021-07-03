@@ -22,6 +22,12 @@
 
 ## Как установить
 
+При работе без docker-compose команды выполняются в директории server
+
+```bash
+cd server
+```
+
 Для работы микросервиса нужен Python версии не ниже 3.6.
 
 ```bash
@@ -31,6 +37,7 @@ pip install -r requirements.txt
 ## Как запустить
 
 ```bash
+cd server
 python server.py
 ```
 
@@ -54,6 +61,7 @@ docker-compose up
 ## Как развернуть на сервере
 
 ```bash
+cd server
 python server.py
 ```
 
