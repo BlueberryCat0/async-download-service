@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  server:
+    build:
+      context: ./
+      dockerfile: ./server/Dockerfile
+    command: python server.py
+    ports:
+      - 8080:8080
+    volumes:
+      - ./server:/server
+    environment:
+      DEBUG: 'true'
+      DEBUG_ZIP: 'true'
+      ARCHIVE_FILES_PATH: 'test_photos'
