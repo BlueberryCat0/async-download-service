@@ -86,7 +86,7 @@ if __name__ == '__main__':
     app.add_routes([
         web.get('/', handle_index_page),
         web.get('/archive/{archive_hash}/', archive_download_view),
-        web.get('/uptime', uptime_handler),
+        web.get('/uptime/', uptime_handler),
     ])
 
     web.run_app(app)
